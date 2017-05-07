@@ -12,6 +12,8 @@ This repository is brought to you by [Data Is
 Plural](https://tinyletter.com/data-is-plural), a weekly newsletter of
 useful/curious datasets.
 
+#### R code to produce dumbbell plot of top 10 differences in spending.
+
     library(readr)
     library(ggplot2)
     library(ggalt)
@@ -30,8 +32,6 @@ useful/curious datasets.
 
     library(forcats)
     library(fuzzyjoin)
-
-
 
 
     tab <- read_tsv("commodities-spending.tsv")
