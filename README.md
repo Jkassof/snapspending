@@ -78,7 +78,7 @@ useful/curious datasets.
                    yend = 10.4),
                    colour = '#d62d20')
     g <-  g + geom_text(aes(x = lab_x, y = lab_y, label = paste0("Delta~", "", labs), fontface = "plain"), parse = TRUE, size = 4)
-    g <-  g + geom_text(aes(label = "Snap Rank", x = snap_rank[1], y = 10.5), size = 3) 
+    g <-  g + geom_text(aes(label = "Snap Rank", x = snap_rank[1] + 7, y = 10.5), size = 3) 
     g <-  g + geom_text(aes(label = "Non-Snap Rank", x = nonsnap_rank[1], y = 10.5), size = 3) 
     g <-  g + theme(plot.background=element_rect(fill = "grey93", colour = "grey93"))
     g <-  g + theme(plot.title=element_text(size = 11, hjust = 0))
