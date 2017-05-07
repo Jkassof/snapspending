@@ -5,8 +5,8 @@ In November 2016, the United States Department of Agriculture [published
 a
 study](https://www.fns.usda.gov/snap/foods-typically-purchased-supplemental-nutrition-assistance-program-snap-households)
 that used “calendar year 2011 point-of-sale transaction data from a
-leading grocery retailer to examine the food choices of \[Supplemental
-Nutrition Assistance Program (SNAP)\] and non-SNAP households.”
+leading grocery retailer to examine the food choices of Supplemental
+Nutrition Assistance Program (SNAP) and non-SNAP households.”
 
 This repository is brought to you by [Data Is
 Plural](https://tinyletter.com/data-is-plural), a weekly newsletter of
@@ -70,16 +70,14 @@ useful/curious datasets.
     g <-  g + geom_segment(aes(x = snap_rank[1], 
                     xend = snap_rank[1] , 
                     y = 10.1, 
-                    yend = 10.4),
+                    yend = 11.5),
                     colour = '#008744')  
     g <-  g + geom_segment(aes(x = nonsnap_rank[1], 
                    xend = nonsnap_rank[1], 
                    y = 10.1, 
-                   yend = 10.4),
+                   yend = 11.5),
                    colour = '#d62d20')
     g <-  g + geom_text(aes(x = lab_x, y = lab_y, label = paste0("Delta~", "", labs), fontface = "plain"), parse = TRUE, size = 4)
-    g <-  g + geom_text(aes(label = "Snap Rank", x = snap_rank[1] + 7, y = 10.5), size = 3) 
-    g <-  g + geom_text(aes(label = "Non-Snap Rank", x = nonsnap_rank[1], y = 10.5), size = 3) 
     g <-  g + theme(plot.background=element_rect(fill = "grey93", colour = "grey93"))
     g <-  g + theme(plot.title=element_text(size = 11, hjust = 0))
     g <-  g + theme(text = element_text(family = "Palatino"))
