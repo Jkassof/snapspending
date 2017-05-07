@@ -70,12 +70,12 @@ useful/curious datasets.
     g <-  g + geom_segment(aes(x = snap_rank[1], 
                     xend = snap_rank[1] , 
                     y = 10.1, 
-                    yend = 11),
+                    yend = 10.5),
                     colour = '#008744')  
     g <-  g + geom_segment(aes(x = nonsnap_rank[1], 
                    xend = nonsnap_rank[1], 
                    y = 10.1, 
-                   yend = 11),
+                   yend = 10.5),
                    colour = '#d62d20')
     g <-  g + geom_text(aes(x = lab_x, y = lab_y, label = paste0("Delta~", "", labs), fontface = "plain"), parse = TRUE, size = 4)
     g <-  g + theme(plot.background=element_rect(fill = "grey93", colour = "grey93"))
